@@ -6,7 +6,7 @@ $tmp = array(/*
 	'some_setting' => array(
 		'xtype' => 'combo-boolean',
 		'value' => true,
-		'area' => 'qrcode_main',
+		'area' => 'getqrcode_main',
 	),
 	*/
 );
@@ -16,7 +16,7 @@ foreach ($tmp as $k => $v) {
 	$setting = $modx->newObject('modSystemSetting');
 	$setting->fromArray(array_merge(
 		array(
-			'key' => 'qrcode_' . $k,
+			'key' => 'getqrcode_' . $k,
 			'namespace' => PKG_NAME_LOWER,
 		), $v
 	), '', true, true);

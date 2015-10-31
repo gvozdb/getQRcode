@@ -1,10 +1,10 @@
 <?php
 
 /* define package */
-define('PKG_NAME', 'QRcode');
+define('PKG_NAME', 'getQRcode');
 define('PKG_NAME_LOWER', strtolower(PKG_NAME));
 
-define('PKG_VERSION', '1.0.0');
+define('PKG_VERSION', '1.0.1');
 define('PKG_RELEASE', 'beta');
 define('PKG_AUTO_INSTALL', true);
 define('PKG_NAMESPACE_PATH', '{core_path}components/' . PKG_NAME_LOWER . '/');

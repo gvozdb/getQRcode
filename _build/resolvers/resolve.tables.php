@@ -6,12 +6,12 @@ if ($object->xpdo) {
 
 	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		case xPDOTransport::ACTION_INSTALL:
-			$modelPath = $modx->getOption('qrcode_core_path', null, $modx->getOption('core_path') . 'components/qrcode/') . 'model/';
-			$modx->addPackage('qrcode', $modelPath);
+			$modelPath = $modx->getOption('getqrcode_core_path', null, $modx->getOption('core_path') . 'components/getqrcode/') . 'model/';
+			$modx->addPackage('getqrcode', $modelPath);
 
 			$manager = $modx->getManager();
 			$objects = array(
-				'QRcodeItem',
+				'getQRcodeItem',
 			);
 			foreach ($objects as $tmp) {
 				$manager->createObjectContainer($tmp);

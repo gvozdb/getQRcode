@@ -3,8 +3,8 @@
 $menus = array();
 
 $tmp = array(
-	/*'qrcode' => array(
-		'description' => 'qrcode_menu_desc',
+	/*'getqrcode' => array(
+		'description' => 'getqrcode_menu_desc',
 		'action' => array(
 			'controller' => 'index',
 		),

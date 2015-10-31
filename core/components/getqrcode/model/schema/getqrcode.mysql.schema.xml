@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="getqrcode" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="getqrcode"
+	   version="1.1">
+	
+	<object class="getQRcodeItem" table="getqrcode_items" extends="xPDOSimpleObject">
+		<field key="resource_id" dbtype="int" precision="10" attributes="unsigned" phptype="integer" null="true" default="0" />
+		<field key="text" dbtype="varchar" precision="999" phptype="string" null="false" default=""/>
+		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
+		<field key="path" dbtype="varchar" precision="255" phptype="string" null="true" default="" />
+		<field key="file" dbtype="varchar" precision="255" phptype="string" null="false" />
+		<field key="url" dbtype="varchar" precision="255" phptype="string" null="true" default="" />
+		<field key="type" dbtype="varchar" precision="19" phptype="string" null="true" />
+		<field key="hash" dbtype="char" precision="90" phptype="string" null="true" default="" index="index" />
+		
+		<index alias="resource_id" name="resource_id" primary="false" unique="false" type="BTREE" >
+			<column key="resource_id" length="" collation="A" null="false" />
+		</index>
+		<index alias="text" name="text" primary="false" unique="false" type="BTREE">
+			<column key="text" length="" collation="A" null="false"/>
+		</index>
+		<index alias="type" name="type" primary="false" unique="false" type="BTREE" >
+			<column key="type" length="" collation="A" null="false" />
+		</index>
+		<index alias="hash" name="hash" primary="false" unique="false" type="BTREE" >
+			<column key="hash" length="" collation="A" null="false" />
+		</index>
+	</object>
+	
+</model>

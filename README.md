@@ -1,3 +1,3 @@
-## QRcode
+## getQRcode
 
-QRcode - компонент генерирующий QR коды.
+getQRcode - компонент генерирующий QR коды.

@@ -1,5 +1,0 @@
-Changelog for QRcode.
-
-1.0.0-beta
-==============
-- start

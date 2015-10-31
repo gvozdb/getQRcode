@@ -3,8 +3,8 @@
 $plugins = array();
 
 $tmp = array(
-	/*'QRcode' => array(
-		'file' => 'qrcode',
+	/*'getQRcode' => array(
+		'file' => 'getqrcode',
 		'description' => '',
 		'events' => array(
 			'OnManagerPageInit' => array()

@@ -239,7 +239,7 @@ class getQRcodeItemGenerateProcessor extends modObjectProcessor
 				include $this->config['libPath'] .'phpqrcode/qrlib.php';
 			}
 			
-			QRcode::$params['type']( $text, $filepath, $params['ecc'], $params['pixels'], $params['frame'] );
+			QRcode::{$params['type']}( $text, $filepath, $params['ecc'], $params['pixels'], $params['frame'] );
 		}
 		// << генерируем QR код
 		
